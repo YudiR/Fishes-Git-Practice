@@ -13,4 +13,10 @@ class FishesController < ApplicationController
           render :edit
         end
       end
+
+      def destroy
+        @fish = Fish.find(params[:id])
+        @fish.destroy
+        redirect_to '/fishes'
+      end
 end
