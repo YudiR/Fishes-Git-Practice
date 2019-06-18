@@ -1,9 +1,9 @@
-<h1>All the Best Fish </h1>
+<h1>All the Best Fish in The world</h1>
 
-    @fish.each do |fish|
+    <%@fishes.each do |fish|%>
         <p>Name:<%=fish.name %></p>
         <p>Color: <%=fish.color %></p>
         <p>Image:</p> <img src="<%= fish.picture%>">
-    <%=end%>
+    <%end%>
 
     
